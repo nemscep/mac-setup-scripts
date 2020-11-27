@@ -1,0 +1,30 @@
+# Special characters (bash)
+
+\u - Current user's username
+\h - Hostname up to the first .
+\n - New line
+\s - Name of the shell
+\t - Current time in 24-hour format
+\w - Current working directory (full path from $HOME)
+\W - Basename of the current working directory
+
+# nemscep (some-branch) folder $
+PS1 = "\u (git) \W $ "
+export PS1
+
+########################
+# Special characters (zsh)
+
+%n -> Current user's username
+%m -> Hostname up to the first .
+%M -> Full hostname
+%T -> Current time in 24h format
+%~ - Current working directory (full path from $HOME)
+%d, %/ - Basename of the current working directory
+
+# nemscep (some-branch) folder $
+PROMPT='%{$FG[140]%}%n ' # pink username
+PROMPT+='%{$FG[226]%}$(git_prompt_info) ' # yellow git
+PROMPT+='%{$FG[068]%}%1~ $ ' # blue path
+PROMPT+='%{$reset_color%}'
+
