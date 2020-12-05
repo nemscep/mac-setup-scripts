@@ -2,6 +2,7 @@ echo "Configring Git globals"
 git config --global merge.tool diffmerge
 git config --global merge.conflictstyle diff3
 git config --global mergetool.prompt false
+git config --global pager.branch false
 git config --global alias.co checkout
 git config --global alias.ci commit
 git config --global alias.st status
