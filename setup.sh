@@ -47,3 +47,7 @@ curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-co
 echo "Installing Git"
 brew install git
 brew install zsh-git-prompt
+
+# Git setup
+./git-setup.sh
+./install.sh
