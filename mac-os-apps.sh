@@ -1,4 +1,4 @@
-echo "Installing MacOS Applications"
+echo "Installing default applications"
 # Install Brew Packages
 # Install MacOS Applications
 brew cask install google-chrome
@@ -12,12 +12,6 @@ brew cask install google-backup-and-sync
 brew cask install slack
 brew cask install postman
 brew cask install zeplin
-
-# Android specific
-brew cask install android-studio
-brew cask install android-sdk
-brew cask install android-platform-tools 
-brew cask install vysor
 
 # Taps
 # Drivers

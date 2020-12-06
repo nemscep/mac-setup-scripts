@@ -48,6 +48,5 @@ echo "Installing Git"
 brew install git
 brew install zsh-git-prompt
 
-# Git setup
-./git-setup.sh
+# Applications
 ./install.sh

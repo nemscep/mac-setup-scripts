@@ -3,11 +3,11 @@ git config --global merge.tool diffmerge
 git config --global merge.conflictstyle diff3
 git config --global mergetool.prompt false
 git config --global pager.branch false
-git config --global alias.co checkout
-git config --global alias.ci commit
-git config --global alias.st status
-git config --global alias.br branch
-git config --global core.editor $(which vim)
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-git config --global alias.tree "log --graph --full-history --all --color --date=short --pretty=format:'%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset'"
-
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+git config --global core.editor "subl -n -w"
+# Aliases
+git config --global alias.cm 'commit -m'
+git config --global alias.sl 'stash list'
+git config --global alias.s stash
+# Deleted, added, unstaged, staged default colors
+git config --global color.ui auto
