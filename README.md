@@ -1,7 +1,7 @@
 # mac-setup-scripts
 
 ############
-[DISCLAIMER] NOT THOROUHLY TESTED SO STILL NOT STABLE!
+[DISCLAIMER] NOT THOROUGHLY TESTED SO STILL NOT STABLE!
 #############
 
 Repository which conists of script files for automating macOS environment setup. 
