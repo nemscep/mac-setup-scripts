@@ -12,7 +12,7 @@ This setup consists of:
 - Applications installations
 
 Where I got the idea from: [https://www.youtube.com/watch?v=kIdiWut8eD8&ab_channel=CoreySchafer]
-Kuddos to Corey!
+Kudos to Corey!
 
 Usage:
 - Clone this repo on $HOME path (result: $HOME/mac-setup-scripts)
