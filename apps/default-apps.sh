@@ -1,6 +1,4 @@
-echo "Installing default applications"
-# Install Brew Packages
-# Install MacOS Applications
+# Install default applications
 brew cask install google-chrome
 brew cask install sublime-text
 brew cask install spotify

@@ -1,4 +1,4 @@
-# Android specific
+# Android specific apps
 brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 brew cask install android-studio
 brew cask install android-sdk
