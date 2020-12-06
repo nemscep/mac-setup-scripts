@@ -1,5 +1,5 @@
 # Install macOS apps
-./mac-os-apps.sh
+./default-apps.sh
 ./android.sh
 
 # Setup git global config
