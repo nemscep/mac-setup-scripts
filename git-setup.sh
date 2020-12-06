@@ -1,4 +1,3 @@
-echo "Configring Git globals"
 git config --global merge.tool diffmerge
 git config --global merge.conflictstyle diff3
 git config --global mergetool.prompt false
