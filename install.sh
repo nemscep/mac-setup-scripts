@@ -1,3 +1,7 @@
+# symlinks
+echo "Creating symlinks"
+./symlinks.sh
+
 # Install macOS apps
 echo "Installing default apps"
 ./apps/default-apps.sh
