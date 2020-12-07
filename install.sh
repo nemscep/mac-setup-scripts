@@ -1,21 +1,25 @@
+# Terminal setup
+echo "Terminal setup..."
+./terminal.sh
+
 # symlinks
-echo "Creating symlinks"
+echo "Creating symlinks..."
 ./symlinks.sh
 
 # Install macOS apps
-echo "Installing default apps"
+echo "Installing default apps..."
 ./apps/default-apps.sh
 
 # Install default work apps
-echo "Installing default work apps"
+echo "Installing default work apps..."
 ./apps/default-work.sh
 
 # Install android speciifc apps (android-studio, java, etc.)
-echo "Installing android specific apps"
+echo "Installing android specific apps..."
 ./apps/android.sh
 
 # Install necessary drivers
-echo "Installing drivers"
+echo "Installing drivers..."
 ./drivers.sh
 
 # Setup git global config

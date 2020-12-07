@@ -1,0 +1,13 @@
+[color]
+	ui = auto
+[merge]
+	conflictstyle = diff3
+[core]
+	editor = subl -n -w
+[user]
+	
+[pager]
+	branch = false
+[alias]
+	sl = stash list
+	s = stash
