@@ -2,7 +2,8 @@
 
 ############
 [DISCLAIMER] NOT THOROUGHLY TESTED SO STILL NOT STABLE! 
-[NOTE] If install.sh didn't complete all scripts, execute them one by one (no idea why this happens).
+[NOTE] If `install.sh` didn't complete all scripts, execute them one by one (no idea why this happens). 
+One occurrence of this is when `terminal.sh` reason is that `oh-my-zsh` finishes exceptionally due to some permission error, even though everything has installed properly. This warning provides a way to how to fix these permissions so that can be solved. Now upon re-running `terminal.sh` script, or `install.sh` everything should be finished without any interruptions.  
 #############
 
 Repository which conists of script files for automating macOS environment setup. 
