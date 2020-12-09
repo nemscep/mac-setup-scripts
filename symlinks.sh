@@ -11,7 +11,7 @@ homedir=$1
 dotfiledir=${homedir}/mac-setup-scripts
 
 # list of files/folders to symlink in ${homedir}
-files="zshrc"
+files="zshrc gitconfig"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -21,5 +21,5 @@ echo "...done"
 # create symlinks (will overwrite old dotfiles)
 for file in ${files}; do
     echo "Creating symlink to $file in home directory."
-    ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
+    ln -s ${dotfiledir}/.${file} ${homedir}/.${file}
 done
