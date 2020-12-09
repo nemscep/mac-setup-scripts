@@ -1,7 +1,8 @@
 # mac-setup-scripts
 
 ############
-[DISCLAIMER] NOT THOROUGHLY TESTED SO STILL NOT STABLE!
+[DISCLAIMER] NOT THOROUGHLY TESTED SO STILL NOT STABLE! 
+[NOTE] If install.sh didn't complete all scripts, execute them one by one (no idea why this happens).
 #############
 
 Repository which conists of script files for automating macOS environment setup. 
@@ -9,7 +10,7 @@ This setup consists of:
 - Terminal setup
 - Git setup
 - Brew setup
-- Applications installations
+- Installing macOS apps
 
 Where I got the idea from: [https://www.youtube.com/watch?v=kIdiWut8eD8&ab_channel=CoreySchafer]
 Kudos to Corey!
@@ -18,15 +19,16 @@ Usage:
 - Clone this repo on $HOME path (result: $HOME/mac-setup-scripts)
 - Open terminal
 - Copy $HOME path to clipboard (use pwd command to show current path '/Users/nemscep/mac-setup-scipts', copy '/Users/nemscep')
-- Invoke 'install.sh /Users/nemscep'
+- Invoke 'pre-install.sh'
+- Invoke 'install.sh $HOME'
 
-[setup.sh] 
-This is a "runner" dotfile (usage 'setup.sh $HOME/'. 
-This script holds logic for creating symlinks for terminal specific dotfiles (.zshrc or .bashprofile, etc.).
-After symlinking is completed, './install.sh' is called for actual applications setup.
+[pre-install.sh] 
+This is a "prerequisits" dotfile. 
+This scripts installs brew, which is crutcial for the further installation process.
 
-[git-setup.sh] 
-Holds git global config setup.
+[terminal.sh] 
+Holds terminal setup logic.
+This scripts includes installing zsh, oh-my-zsh, git, zsh-git-prompt.
 
 [install.sh] 
 Holds actual list of scripts which are to be invoked.
@@ -48,4 +50,10 @@ These apps are: java8, android-studio, android-platform-tools, android-sdk, vyso
 [drivers.sh]
 Dotfile for installing external devices drivers and apps.
 In my case this is MxMaster MS2 software -> logitech-options.
+
+[.zshrc]
+Holds terminal style.
+
+[.gitconfig]
+Holds git global configurations.
 
