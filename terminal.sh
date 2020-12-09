@@ -4,7 +4,10 @@
 # xcode-select --install
 
 # Installing zsh
+echo "Installing zsh"
 brew install zsh
+
+# Installing oh-my-zsh
 echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
