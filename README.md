@@ -18,9 +18,8 @@ Kudos to Corey!
 Usage:
 - Clone this repo on $HOME path (result: $HOME/mac-setup-scripts)
 - Open terminal
-- Copy $HOME path to clipboard (use pwd command to show current path '/Users/nemscep/mac-setup-scipts', copy '/Users/nemscep')
-- Invoke 'pre-install.sh'
-- Invoke 'install.sh $HOME'
+- Invoke 'pre-install.sh' responsible for setting up Homebrew
+- Invoke 'install.sh' with desired scripts
 
 [pre-install.sh] 
 This is a "prerequisits" dotfile. 
@@ -29,6 +28,9 @@ This scripts installs brew, which is crutcial for the further installation proce
 [terminal.sh] 
 Holds terminal setup logic.
 This scripts includes installing zsh, oh-my-zsh, git, zsh-git-prompt.
+
+[symlinks.sh]
+Holds logic for creating symlinks for specified files from script's directory to the $HOME directory.
 
 [install.sh] 
 Holds actual list of scripts which are to be invoked.
