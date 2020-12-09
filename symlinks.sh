@@ -1,14 +1,7 @@
 #!/usr/bin/env bash
 
-if [ "$#" -ne 1 ]; then
-    echo "Usage: install.sh <home_directory>"
-    exit 1
-fi
-
-homedir=$1
-
 # dotfiles directory
-dotfiledir=${homedir}/mac-setup-scripts
+dotfiledir=$HOME/mac-setup-scripts
 
 # list of files/folders to symlink in ${homedir}
 files="zshrc gitconfig"
@@ -21,5 +14,5 @@ echo "...done"
 # create symlinks (will overwrite old dotfiles)
 for file in ${files}; do
     echo "Creating symlink to $file in home directory."
-    ln -s ${dotfiledir}/.${file} ${homedir}/.${file}
+    ln -sf ${dotfiledir}/.${file} $HOME/.${file}
 done
