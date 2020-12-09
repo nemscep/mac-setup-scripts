@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install default applications
 brew cask install google-chrome
 brew cask install sublime-text

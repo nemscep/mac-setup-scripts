@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Android specific apps
 brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 brew cask install android-studio
