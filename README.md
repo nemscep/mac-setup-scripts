@@ -10,7 +10,7 @@ This setup consists of:
 - Terminal setup
 - Git setup
 - Brew setup
-- Applications installations
+- Installing macOS apps
 
 Where I got the idea from: [https://www.youtube.com/watch?v=kIdiWut8eD8&ab_channel=CoreySchafer]
 Kudos to Corey!
