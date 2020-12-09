@@ -2,6 +2,7 @@
 	ui = auto
 [merge]
 	conflictstyle = diff3
+	tool = diffmerge
 [core]
 	editor = subl -n -w
 [user]
@@ -11,3 +12,6 @@
 [alias]
 	sl = stash list
 	s = stash
+	cp = cherry-pick
+[mergetool]
+	prompt = false
