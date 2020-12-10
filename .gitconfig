@@ -13,6 +13,6 @@
 	sl = stash list
 	s = stash
 	cp = cherry-pick
-	cm = commin -m
+	cm = commit -m
 [mergetool]
 	prompt = false
