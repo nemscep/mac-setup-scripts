@@ -6,6 +6,9 @@ xcode-select --install
 echo "...done"
 echo "############"
 
+# Setting permissions
+ compaudit | xargs chmod g-w,o-w
+
 # Installing zsh
 echo "Installing zsh"
 brew install zsh
