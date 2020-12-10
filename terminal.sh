@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Installing command line tools
+echo "Installing command-line-tools"
+xcode-select --install
+echo "...done"
+echo "############"
+
 # Installing zsh
 echo "Installing zsh"
 brew install zsh
