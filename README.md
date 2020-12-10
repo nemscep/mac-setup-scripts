@@ -48,6 +48,7 @@ These apps are: slack, postman, zeplin, etc.
 Dotfile for installing android related applications via brew.
 These apps are: java8, android-studio, android-platform-tools, android-sdk, vysor, etc
 (DISCLAIMER) This might not be a complete setup! Proceed with caution :danger:
+[Tip] If after gradle sync you get a message saying licences haven't been agreed to, just run: yes | sudo ~/Library/Android/sdk/tools/bin/sdkmanager --licenses
 
 [drivers.sh]
 Dotfile for installing external devices drivers and apps.
