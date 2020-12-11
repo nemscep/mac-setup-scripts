@@ -14,5 +14,6 @@
 	s = stash
 	cp = cherry-pick
 	cm = commit -m
+	fp = fetch --prune
 [mergetool]
 	prompt = false
