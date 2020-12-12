@@ -2,13 +2,13 @@
 
 # jdk 8
 echo "Installing jdk8"
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 echo "...done"
 echo "##########"
 
 # Android Studio
 echo "Installing android-studio"
-brew cask install android-studio
+brew install --cask android-studio
 echo "...done"
 echo "##########"
 
@@ -20,18 +20,18 @@ echo "##########"
 
 # Android sdk
 echo "Installing android-sdk"
-brew cask install android-sdk
+brew install --cask android-sdk
 echo "...done"
 echo "##########"
 
 # Android platform tools
 echo "Installing android-platform-tools"
-brew cask install android-platform-tools 
+brew install --cask android-platform-tools 
 echo "...done"
 echo "##########"
 
 # Vysor
 echo "Installing vysor"
-brew cask install vysor
+brew install --cask vysor
 echo "...done"
 echo "##########"

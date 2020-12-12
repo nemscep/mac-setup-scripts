@@ -2,17 +2,17 @@
 
 # Slack
 echo "Installing slack"
-brew cask install slack
+brew install --cask slack
 echo "...done"
 echo "###########"
 
 # Postman
 echo "Installing postman"
-brew cask install postman
+brew install --cask postman
 echo "...done"
 echo "###########"
 
 # Zeplin
 echo "Installing zeplin"
-brew cask install zeplin
+brew install --cask zeplin
 echo "...done"
