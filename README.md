@@ -2,7 +2,7 @@
 
 ############
 [NOTE] If `install.sh` didn't complete all scripts, execute them one by one (no idea why this happens). 
-One occurrence of this is when `terminal.sh` reason is that `oh-my-zsh` finishes exceptionally due to some permission error, even though everything has installed properly. This warning provides a way to how to fix these permissions so that can be solved. Now upon re-running `terminal.sh` script, or `install.sh` everything should be finished without any interruptions.  
+One occurrence of this is when `terminal.sh`'s `oh-my-zsh` installation finishes exceptionally, due to some permission errors, even though everything has installed properly. This warning provides a way to how to fix these permissions so that can be solved. Upon re-running `terminal.sh` script, or `install.sh` everything should be finished without any interruptions.  
 #############
 
 Repository which conists of script files for automating macOS environment setup. 
@@ -48,6 +48,7 @@ These apps are: slack, postman, zeplin, etc.
 Dotfile for installing android related applications via brew.
 These apps are: java8, android-studio, android-platform-tools, android-sdk, vysor, etc
 (DISCLAIMER) This might not be a complete setup! Proceed with caution :danger:
+[Tip] If after gradle sync you get a message saying licences haven't been agreed to, just run: yes | sudo ~/Library/Android/sdk/tools/bin/sdkmanager --licenses
 
 [drivers.sh]
 Dotfile for installing external devices drivers and apps.
