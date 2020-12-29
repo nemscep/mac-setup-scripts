@@ -9,6 +9,7 @@
 	
 [pager]
 	branch = false
+	log = false
 [alias]
 	sl = stash list
 	s = stash
