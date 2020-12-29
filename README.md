@@ -20,6 +20,7 @@ Usage:
 - Open terminal
 - Invoke 'pre-install.sh' responsible for setting up Homebrew
 - Invoke 'install.sh' with desired scripts
+[NOTE] If `permissions denied is shown` execute scripts in the following sequence: `chmod u+x pre-install.sh`, `./pre-install.sh`.
 
 [pre-install.sh] 
 This is a "prerequisits" dotfile. 
