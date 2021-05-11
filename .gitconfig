@@ -9,12 +9,19 @@
 	
 [pager]
 	branch = false
-	log = false
+	log = true
 [alias]
 	sl = stash list
 	s = stash
 	cp = cherry-pick
 	cm = commit -m
 	fp = fetch --prune
+	lg = log --oneline
+	lgn = log --oneline -n
+	ra = rebase --abort
+	ma = merge --abort
+	rc = rebase --continue
+	mc = merge --continue
+	cb = checkout -b
 [mergetool]
 	prompt = false
