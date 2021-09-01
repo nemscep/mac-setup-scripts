@@ -6,6 +6,8 @@
 [core]
 	editor = subl -n -w
 [user]
+	name = nemscep
+	email = nemscepanovic@gmail.com
 	
 [pager]
 	branch = false
@@ -25,3 +27,5 @@
 	cb = checkout -b
 [mergetool]
 	prompt = false
+[init]
+	main = main

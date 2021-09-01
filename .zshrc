@@ -1,11 +1,18 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Path to java
+export PATH="$PATH:/usr/bin/java"
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Path to git-jira
-#export GITJIRA=$HOME/Documents/tutti/git-jira
+# Path to ios2android
+export IOS2ANDROID=$HOME/Documents/nemscep/freelance/ios2android/ios2android.sh
+
+# Path to flutter
+export PATH="$PATH:/Users/nemscep/flutter/bin"
 
 # Prompt
 PROMPT='%{$FG[140]%}%n. ' # pink username
@@ -16,5 +23,5 @@ PROMPT+='%{$reset_color%}'
 # User configuration
 source $ZSH/oh-my-zsh.sh
 source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
-#source $GITJIRA/git-jira
+
 
