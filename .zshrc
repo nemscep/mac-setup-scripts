@@ -8,9 +8,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Path to ios2android
-export IOS2ANDROID=$HOME/Documents/nemscep/freelance/ios2android/ios2android.sh
-
 # Path to flutter
 export PATH="$PATH:/Users/nemscep/flutter/bin"
 
