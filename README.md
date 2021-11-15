@@ -1,63 +1,82 @@
-# mac-setup-scripts
+# Mac setup scripts
+Welcome fellow MacOS lovers!\
+Tired of spending an entire day setting up your new Mac? *Yes!* \
+Tired of downloading applications using you browser? *God yes!* \
 
-############
-[NOTE] If `install.sh` didn't complete all scripts, execute them one by one (no idea why this happens). 
-One occurrence of this is when `terminal.sh`'s `oh-my-zsh` installation finishes exceptionally, due to some permission errors, even though everything has installed properly. This warning provides a way to how to fix these permissions so that can be solved. Upon re-running `terminal.sh` script, or `install.sh` everything should be finished without any interruptions.  
-#############
+**There is an easier way, using this repository!** \
+This repo contains quick setup scripts which speed up the procees ten fold!
 
-Repository which conists of script files for automating macOS environment setup. 
-This setup consists of:
-- Terminal setup
-- Git setup
-- Brew setup
-- Installing macOS apps
+How it achives this? \
+_**Well lets dive into it!**_
 
-Where I got the idea from: [https://www.youtube.com/watch?v=kIdiWut8eD8&ab_channel=CoreySchafer]
-Kudos to Corey!
+[NOTE] Credit where credit is due! \
+I've got the idea from [this](https://www.youtube.com/watch?v=kIdiWut8eD8&ab_channel=CoreySchafer) big brain fella (go subscribe!)
 
-Usage:
-- Clone this repo on $HOME path (result: $HOME/mac-setup-scripts)
-- Open terminal
-- Invoke 'pre-install.sh' responsible for setting up Homebrew
-- Invoke 'install.sh' with desired scripts
-[NOTE] If `permissions denied is shown` execute scripts in the following sequence: `chmod u+x pre-install.sh`, `./pre-install.sh`.
 
-[pre-install.sh] 
-This is a "prerequisits" dotfile. 
-This scripts installs brew, which is crutcial for the further installation process.
+## Setup
+In order to properly use this repo follow these steps.\
+If you have any issues feel free to leave a message.
 
-[terminal.sh] 
-Holds terminal setup logic.
-This scripts includes installing zsh, oh-my-zsh, git, zsh-git-prompt.
+1. Clone this repository to you `$HOME` path (result: `$HOME/mac-setup-scripts`)
+1. Open you terminal (`command + space`, type `terminal` and hit enter)
+1. Navigate to `mac-setup-scripts` folder (type `cd ~/mac-setup-scripts`)
+1. Execute `pre-install.sh` script (type `./pre-install.sh` and hit enter)
+1. Verify that homebrew is installed (type `brew --version` and hit enter)
+1. Open `install.sh` script in you desired text editor
+1. Configure contents of the script per your desire\
+   [Note] The contents you are seeing is my actual install script setup which uses my topic oriented smaller scripts. \
+   To make it easier, you can just constrain to the pattern of those smaller scripts and perform installation directly within `install.sh`.\
+   Bear in mind though, `symlinks.sh` creates symlinks to `.gitconfig` and `.zshrc` which are inside `mac-setup-scripts` folder. \
+   This helps you store your cloned version of this repo wherever you want (your own repo even!) so you can do this setup again in the future if needed.
+   [Note] Each of the steps and their contents will be thoroughly explained in their topic section.
+1. Run `install.sh`
 
-[symlinks.sh]
-Holds logic for creating symlinks for specified files from script's directory to the $HOME directory.
+## Topics
+* [Terminal setup](#terminal-setup)
+* [Symlinks setup](#symlinks-setup)
+* [Applications setup](#applications-setup)
+* [Drivers setup](#drivers-setup)
 
-[install.sh] 
-Holds actual list of scripts which are to be invoked.
-Depending on the need, when new dotfiles are introduced, this is where they need to be included in order for them to be executed. 
+### Terminal setup
+Terminal setup aka `terminal.sh` script, consists of set of commands responsible for installing the following dependencies for your Mac's terminal:
+* Command line tools
+* Zsh
+* Oh-my-zsh!
+* Git
+* Git-prompt
 
-[default-apps.sh] 
-Dotfile for installing "default" macOS applications via brew. 
-These apps are: google-chrome, spotify, google-backup-and-sync, sublime-text, etc.
+### Symlinks setup
+Symlinks setup aka `symlinks.sh` script provides you with the ability to have `.zshrc`  and `.gitconfig` files sitting in the `mac-setup-scripts` folder while being references to as the the main `.zshrc` and `.gitconfig` files of you terminal.\
+_Why is this needed you might ask?_ \
+Technically it is not, you can manually tap these files and move them to you `$HOME` directory and everything would still work properly.\ But the underlaying idea is to have a centralised place where you modify files, and if needed these modifed files can then be pushed to your cloned repo of some sorts.\
+This allows you to have files online which you can share or heck, even use them on a different Mac!
 
-[default-work.sh]
-Dotfile for installing "default" work macOS applications via brew.
-These apps are: slack, postman, zeplin, etc.
+Files which symlinks are created for:
+* `.zshrc` includes all required path exports, terminal look and feel, etc.
+* `.gitconfig` includes git setup for the terminal
 
-[android.sh]
-Dotfile for installing android related applications via brew.
-These apps are: java8, android-studio, android-platform-tools, android-sdk, vysor, etc
-(DISCLAIMER) This might not be a complete setup! Proceed with caution :danger:
-[Tip] If after gradle sync you get a message saying licences haven't been agreed to, just run: yes | sudo ~/Library/Android/sdk/tools/bin/sdkmanager --licenses
+[NOTE] Where in doubt always ask!\
+I've added a text file `prompt-characters.txt` which explains which symbols should be used when constructing a proper terminal look.
 
-[drivers.sh]
-Dotfile for installing external devices drivers and apps.
-In my case this is MxMaster MS2 software -> logitech-options.
+### Applications setup
+Applications setup aka a lot of `brew install <app name>` commands divided into yet more topic oriented scripts. \
+_As I am an Android Developer, I've centralised my division to my needs but feel free to create you scripts however you like!_ \
 
-[.zshrc]
-Holds terminal style.
+So for the sake of full transparency, here is how brew works in a few words.\
+Lets say we want to install `Discord` app.\
+All you have to do is type `brew install discord` and voila, it is installed just like that!\
+For more information to how brew works, or if for some reason the app you want to install is not discoverable visit [homebrew website](https://brew.sh/).
 
-[.gitconfig]
-Holds git global configurations.
+### Drivers setup
+Drivers setup aka `drivers.sh` script provides drivers installation if needed.\
+It is techincally the same as the application installing step (using homebrew), but is separated in a separate file for topic separation purposes.
+
+## FAQ
+Although no one asked, I am here to answer some questions which you might have.
+* `Permissions denied` message is shown when running `./pre-install.sh` or `./install.sh`. 
+  Very simple solution, just run the same commands with `chmod u+x <your command>` like `chmod u+x install.sh`, then `./install.sh`.\
+  This happens due to security reasons, and running `chmod u+x` adds executable permissions to you scripts.
+* Can I fork or clone this repo?
+  Please do, but don't forget to ping me so I can see how you setup looks like :D
+  
 
