@@ -4,11 +4,11 @@
 	conflictstyle = diff3
 	tool = diffmerge
 [core]
-	editor = subl -n -w
+	editor = atom --wait
 [user]
 	name = nemscep
 	email = nemscepanovic@gmail.com
-	
+
 [pager]
 	branch = false
 	log = true

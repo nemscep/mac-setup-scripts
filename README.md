@@ -1,7 +1,7 @@
 # Mac setup scripts
 Welcome fellow MacOS lovers!\
 Tired of spending an entire day setting up your new Mac? *Yes!* \
-Tired of downloading applications using you browser? *God yes!* 
+Tired of downloading applications using you browser? *God yes!*
 
 **There is an easier way, using this repository!** \
 This repo contains quick setup scripts which speed up the process ten fold!
@@ -26,7 +26,7 @@ If you have any issues feel free to leave a message.
 1. Configure contents of the script per your desire\
    [Note] The contents you are seeing is my actual install script setup which uses my topic oriented smaller scripts. \
    To make it easier, you can just constrain to the pattern of those smaller scripts and perform installation directly within `install.sh` file.\
-   Bear in mind though, `symlinks.sh` creates symlinks to `.gitconfig` and `.zshrc` which are inside `mac-setup-scripts` folder.
+   Bear in mind though, `symlinks.sh` creates symlinks to `.gitconfig` and `.zshrc` which are inside `mac-setup-scripts` folder. Additionally, it creates a symlink to `nemscep.zsh-theme` inside `.oh-my-zsh/custom/themes` which is used to set a global zsh theme for the terminal.
    This helps you store your cloned version of this repo wherever you want (your own repo even!) so you can do this setup again in the future if needed.\
    [Note] Each of the steps and their contents will be thoroughly explained in their topic section.
 1. Run `install.sh`
@@ -43,11 +43,13 @@ Terminal setup aka `terminal.sh` script, consists of set of commands responsible
 * Zsh
 * Oh-my-zsh!
 * Git
-* Git-prompt
 
 ### Symlinks setup
 Symlinks setup aka `symlinks.sh` script provides you with the ability to have `.zshrc`  and `.gitconfig` files sitting in the `mac-setup-scripts` folder while being referenced to as the the main `.zshrc` and `.gitconfig` files of you terminal.\
-_Why is this needed you might ask?_ \
+Additionally, it creates a symlink to `nemscep.zsh-theme` file, responsible for providing PROMPT setup for zsh which is stored inside `$HOME/.oh-my-zsh/custom/themes` folder.\
+
+_Why is this needed you might ask?_
+
 Technically it is not, you can manually tap these files and move them to you `$HOME` directory and everything would still work properly.\
 The underlying idea is to have a centralised place where you modify files, and if needed these modified files can then be pushed to your cloned repo of some sorts.\
 This allows you to have files online which you can share or heck, even use them on a different Mac!
@@ -55,18 +57,21 @@ This allows you to have files online which you can share or heck, even use them 
 Files which symlinks are created for:
 * `.zshrc` includes all required path exports, terminal look and feel, etc.
 * `.gitconfig` includes git setup for the terminal
+* `nemscep.zsh-theme` includes default PROMPT setup for zsh
 
 [NOTE] Where in doubt always ask!\
 I've added a text file `prompt-characters.txt` which explains which symbols should be used when constructing a proper terminal look.
 
+[Here](https://github.com/ohmyzsh/ohmyzsh/wiki/Customization) you can find a detailed guide for further customising of zsh.
+
 ### Applications setup
 Applications setup aka a lot of `brew install <app name>` commands divided into yet more topic oriented scripts. \
-_As I am an Android Developer, I've centralised my division to my needs but feel free to create your scripts however you'd like!_ \
+_As I am an Android Developer, I've centralised my division to my needs but feel free to create your scripts however you'd like!_
 
 Just to make to process more easier to understand.\
 Lets say we want to install `Discord` app.\
 All you have to do is type `brew install discord` and voila, it is installed just like that!\
-For more information to how brew works, or if for some reason the app you want to install is not discoverable visit [homebrew website](https://brew.sh/).\
+For more information to how brew works, or if for some reason the app you want to install is not discoverable visit [homebrew website](https://brew.sh/).
 
 Scripts which I've created considering their "topic":
 * `android.sh` which consists of all android related applications and dependencies
@@ -79,10 +84,8 @@ It is technically the same as the application installing step (using homebrew), 
 
 ## FAQ
 Although no one asked, I am here to answer some questions which you might have.
-* `Permissions denied` message is shown when running `./pre-install.sh` or `./install.sh`. 
+* `Permissions denied` message is shown when running `./pre-install.sh` or `./install.sh`.
   Very simple solution, just run the same commands with `chmod u+x <your command>` like `chmod u+x install.sh`, then `./install.sh`.\
   This happens due to security reasons, and running `chmod u+x` adds executable permissions to you scripts.
 * Can I fork or clone this repo?
   Please do, but don't forget to ping me so I can see how you setup looks like :D
-  
-
