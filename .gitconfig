@@ -5,6 +5,7 @@
 	tool = diffmerge
 [core]
 	editor = atom --wait
+	excludesFile = .gitignore_global
 [user]
 	name = nemscep
 	email = nemscepanovic@gmail.com
