@@ -30,3 +30,5 @@
 	prompt = false
 [init]
 	main = main
+[pull]
+	rebase = true

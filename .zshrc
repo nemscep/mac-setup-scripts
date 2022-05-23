@@ -5,6 +5,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Path to flutter
 export PATH="$PATH:/Users/nemscep/flutter/bin"
 
+# Path to java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 # ZSH
 ZSH_THEME=nemscep
 
