@@ -21,7 +21,7 @@ If you have any issues feel free to leave a message.
 1. Open you terminal (`command + space`, type `terminal` and hit enter)
 1. Navigate to `mac-setup-scripts` folder (type `cd ~/mac-setup-scripts`)
 1. Execute `pre-install.sh` script (type `./pre-install.sh` and hit enter)
-1. Verify that homebrew is installed (type `brew --version` and hit enter)
+1. Verify that homebrew is installed, and if prompted run eval commands to add homebrew to PATH (type `brew --version` and hit enter)
 1. Open `install.sh` script in you desired text editor
 1. Configure contents of the script per your desire\
    [Note] The contents you are seeing is my actual install script setup which uses my topic oriented smaller scripts. \
