@@ -13,3 +13,7 @@ ZSH_THEME=nemscep
 
 # Sourcing
 source $ZSH/oh-my-zsh.sh
+
+# Android stuff
+export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
