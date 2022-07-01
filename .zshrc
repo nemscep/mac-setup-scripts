@@ -17,3 +17,7 @@ source $ZSH/oh-my-zsh.sh
 # Android stuff
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# Gpg stuff
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
