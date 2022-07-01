@@ -9,7 +9,6 @@
 [user]
 	name = nemscep
 	email = nemscepanovic@gmail.com
-
 [pager]
 	branch = false
 	log = true
@@ -17,7 +16,7 @@
 	sl = stash list
 	s = stash
 	cp = cherry-pick
-	cm = commit -m
+	cm = commit -S -m
 	fp = fetch --prune
 	lg = log --oneline
 	lgn = log --oneline -n
@@ -37,3 +36,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
