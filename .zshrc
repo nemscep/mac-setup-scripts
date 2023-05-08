@@ -9,11 +9,11 @@ export PATH="$PATH:/Users/nemscep/flutter/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Path to java
-# export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
-# export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
+ export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+ export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
 
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+#export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+#export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 
 # Secretive
 export SSH_AUTH_SOCK=/Users/nemscep/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
